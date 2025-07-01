@@ -22,6 +22,9 @@ assuming there are over 1 million jobs in the database.
 - For the jobs list endpoint, I prefetched all relevant job statuses to avoid N+1 queries when calculating the latest
 status for each job
 
-# Other Considerations
+# Other Notes
+- Time Taken: ~5 hours
+  - Some time was for learning Playwright and how to integrate it with Docker.
 - If I had more time, I'd implement a production stage in the backend Dockerfile that only installs production dependencies.
 - Since the app is all client-side, I wouldn't use Docker to deploy the frontend. Instead, I would compile the frontend and serve the static files.
+
